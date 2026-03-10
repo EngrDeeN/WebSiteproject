@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug React/Angular App in Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",   // React default port; change to 4200 for Angular
+            "webRoot": "${workspaceFolder}/src", // Points to the 'src' folder for source mapping
+            "sourceMaps": true,                // Enable source maps
+            "breakOnLoad": true,               // Break on first line if needed
+            "preLaunchTask": "npm start"       // Automatically run dev server
+        }
+    ]
+}
